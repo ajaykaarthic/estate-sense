@@ -1,8 +1,7 @@
 FROM node:18-alpine
-WORKDIR /ui/
-COPY public/ /ui/public
-COPY src/ /ui/src
-COPY package.json /ui/
+COPY public/ /public
+COPY src/ /src
+COPY package.json /
 RUN npm install
 CMD ["npm", "start"]
 
